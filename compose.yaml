@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  ruby:
+    #image: ruby:3.2.1
+    build: ${PWD}/_d/ruby
+    networks: [rails1-network]
+    volumes:
+      - ${PWD}/app:/usr/src/app
+
+networks:
+  rails1-network:
+    driver: bridge
