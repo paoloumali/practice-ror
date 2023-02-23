@@ -13,15 +13,7 @@ USER paoloumali
 
 EXPOSE 3000
 
-#RUN gem install rails
-#RUN rails new blog
-#RUN bundle exec rails s -e development -p 80 -b '0.0.0.0'
-
-
-#COPY Gemfile Gemfile.lock ./
-#RUN bundle install
-
 COPY ./entrypoint1.sh /entrypoint1.sh
 
-#ENTRYPOINT ["/entrypoint1.sh"]
-CMD ["bash"]
+ENTRYPOINT ["/entrypoint1.sh"]
+#CMD ["bash"]
