@@ -8,5 +8,5 @@
 ## Local Setup
 
 - add in hosts file `127.0.0.1 ror.paolo.ph`
-
+- docker-compose up
 
