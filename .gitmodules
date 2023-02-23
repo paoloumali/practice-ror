@@ -1,0 +1,3 @@
+[submodule "app/blog"]
+	path = app/blog
+	url = git@github.com:paoloumali/ror-blog.git
