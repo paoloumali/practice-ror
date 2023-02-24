@@ -7,12 +7,12 @@ RUN set -x && \
   adduser --system --home /usr/src/app \
   --uid 1000 --gid 33 paoloumali
 
-WORKDIR /usr/src/app
-
 RUN apt-get update -qq && \
   apt-get install -y nodejs sqlite3 && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+WORKDIR /usr/src/app/blog
 
 USER paoloumali
 
