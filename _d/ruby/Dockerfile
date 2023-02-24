@@ -9,6 +9,11 @@ RUN set -x && \
 
 WORKDIR /usr/src/app
 
+RUN apt-get update -qq && \
+  apt-get install -y nodejs sqlite3 && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 USER paoloumali
 
 EXPOSE 3000
