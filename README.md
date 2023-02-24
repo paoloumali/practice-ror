@@ -10,3 +10,8 @@
 - add in hosts file `127.0.0.1 ror.paolo.ph`
 - docker-compose up
 
+## Notes
+
+```shell
+rails new blog -d mysql -G # use mysql, no git folder
+```
