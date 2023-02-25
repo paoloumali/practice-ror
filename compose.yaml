@@ -18,7 +18,7 @@ services:
     build:
       context: ${PWD}/_d/ruby
     networks: [rails1-network]
-    ports: ["9300:3000"]
+    ports: ["${RAILS_FWD_PORT}:3000"]
     volumes:
       - ${PWD}/app:/usr/src/app
 
